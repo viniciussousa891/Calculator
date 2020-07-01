@@ -20,7 +20,9 @@ body input {
     border: none;
 }
 
-body button {
+body .buttom {
+
+    font-weight: bold;
     background-color: rgb(54, 221, 221);
     margin: 20px;
     padding: 20px;
@@ -28,11 +30,9 @@ body button {
     border: none;
     outline: none;
     transition: 600ms;
-
-
 }
 
-body button:hover {
+input:hover {
     background-color: rgb(13, 184, 184);
 
 }
@@ -46,6 +46,7 @@ body button:hover {
     display: flex;
     flex-direction: column;
 }
+
 .equacion2 input {
     padding: 10px;
 
