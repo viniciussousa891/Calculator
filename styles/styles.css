@@ -10,6 +10,8 @@ body {
 input{
     font-family: poppins;
     font-weight: 600;
+    font-size: 1.8rem;
+   
 }
 
 body {
@@ -65,11 +67,133 @@ text-align: center;
 color: #000000;
 }
 
-#information #numbers #calculator {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+#information #numbers #observation p {
+    font-size: 1.4rem;
+    color: red;
 }
 
+#information #numbers #calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+
+
+/* CSS do valor de A */
+#calculator #valuea {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "texta valuea1"
+    "texta  valuea2";
+}
+
+#calculator #valuea p {
+    grid-area: texta;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
+
+}
+
+#calculator #valuea #valuea1 {
+    grid-area: valuea1;
+    margin-top: 3rem;
+    width: 8rem;
+    height: 4rem;
+}
+
+#calculator #valuea #valuea2 {
+    grid-area: valuea2;
+    margin-top: 0.5rem;
+    width: 8rem;
+    height: 4rem;
+    
+}
+
+/* CSS do valor de B */
+#calculator #valueb {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "textb valueb1"
+    "textb  valueb2";
+}
+
+
+
+#calculator #valueb p {
+    grid-area: textb;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
+
+}
+
+#calculator #valueb #valueb1 {
+    grid-area: valueb1;
+    margin-top: 3rem;
+    width: 8rem;
+    height: 4rem;
+}
+
+#calculator #valueb #valueb2 {
+    grid-area: valueb2;
+    margin-top: 0.5rem;
+    width: 8rem;
+    height: 4rem;
+}
+
+/* CSS do valor de C */
+#calculator #valuec {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "textc valuec1"
+    "textc  valuec2";
+}
+
+
+
+#calculator #valuec p {
+    grid-area: textc;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
+
+}
+
+#calculator #valuec #valuec1 {
+    grid-area: valuec1;
+    margin-top: 3rem;
+    width: 8rem;
+    height: 4rem;
+}
+
+#calculator #valuec #valuec2 {
+    grid-area: valuec2;
+    margin-top: 0.5rem;
+    width: 8rem;
+    height: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 #information #calculator input {
@@ -79,6 +203,7 @@ color: #000000;
     background: #C4C4C4;
     border-radius: 10px;
     border: 2px #C4C4C4 solid;
+    
    
     
     text-decoration: none;
@@ -90,6 +215,21 @@ color: #000000;
 #information #calculator input:focus {
     border: 2px #1CCB6C solid;
 }
+
+
+#information #calculator valuea p {
+    grid-area: "texta";
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
