@@ -18,8 +18,7 @@ input{
 body {
     background-color: #D0CDCD;
     max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+   
 }
 
 #information #title h1 {
@@ -32,18 +31,264 @@ body {
 
 }
 
-#information #numbers  {
-    width: 90%;
-    height: 36rem;
+#information #calculator input {
+
+    margin: 4px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    border: 2px #C4C4C4 solid;
     
-    margin: 1rem auto;
+   
+    
+    text-decoration: none;
+    outline: none;
+    
+
+    transition: border 400ms;
+}
+#information #calculator input:focus {
+    border: 2px #1CCB6C solid;
+}
+
+#information #numbers p {
+
+
+    font-weight: bold;
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+    color: #000000;
+}
+
+#information #numbers #observation p {
+    
+    color: red;
+}
+
+#information #numbers {
+
+
+    margin-top: 5rem;
+    margin-left: 2rem;
     background: #DEDDDD;
     border: 7px solid #1CCB6C;
     box-sizing: border-box;
     border-radius: 20px;
 }
 
-#information #numbers h2 {
+
+
+#information #button input {
+    width: 90%;
+    height: 5rem;
+    margin: 0.6rem auto;
+    font-size: 2.8rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1CCB6C;
+    border-radius: 20px;
+
+    transition: background 500ms;
+
+}
+
+#information #button input:hover {
+    background-color: #15a757;
+}
+
+#container {
+
+    width: 90%;
+    height: 51.5rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    background: #DEDDDD;
+    border: 7px solid #1CCB6C;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#results {
+    margin: 1rem;
+    font-size: 1.3rem;
+    
+}
+
+
+
+@media (max-width: 425px) {
+    body {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    input{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: poppins;
+        font-weight: 600;
+        font-size: 1.8rem;
+        width: 90%;
+        max-width: 18rem;
+        
+        
+    }
+
+    #information #numbers {
+        width: auto;
+        margin: 1rem;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #information #title h1 {
+        font-size: 3rem;
+        align-items: center;
+    }
+
+    
+
+    #information #numbers p {
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+        }
+
+    #information #numbers #observation p {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    body #container {
+        width: auto;
+        margin: 1rem;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+}
+
+@media (min-width: 425px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    input{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: poppins;
+        font-weight: 600;
+        font-size: 1.8rem;
+        width: 90%;
+        max-width: 18rem;
+        
+    }
+
+    #information #numbers {
+        min-width: 80%;
+        width: 90%;
+        margin: 1rem;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 700px;
+    }
+
+    #information #title h1 {
+        font-size: 6rem;
+        align-items: center;
+    }
+
+    #information #numbers h2 {
+        font-size: 2em;
+    }
+
+    #information #numbers p {
+        font-size: 1.5rem;
+    }
+
+    #information #numbers #observation p {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+
+    #container {
+
+        min-width: 80%;
+        width: 80%;
+        margin-right: 2.5rem;
+        
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        max-width: 700px;
+
+    }
+    
+    #information #numbers #calculator {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+    
+}
+
+
+@media (min-width: 1400px) {
+    body {
+        background-color: #D0CDCD;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    
+    
+    #information #title h1 {
+        font-weight: bold;
+        font-size: 10rem;
+        line-height: 1rem;
+        text-align: center;
+        
+        color: #000000;
+    
+    }
+
+    
+    #information #numbers  {
+        width: 90%;
+        height: ;
+        
+        margin: 1rem auto;
+        background: #DEDDDD;
+        border: 7px solid #1CCB6C;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+
+
+ #information #numbers h2 {
     color: #1CCB6C;
     
     font-weight: bold;
@@ -68,10 +313,7 @@ text-align: center;
 color: #000000;
 }
 
-#information #numbers #observation p {
-    font-size: 1.4rem;
-    color: red;
-}
+
 
 #information #numbers #calculator {
     display: grid;
@@ -80,7 +322,7 @@ color: #000000;
 
 
 
-/* CSS do valor de A */
+
 #calculator #valuea {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -113,7 +355,7 @@ color: #000000;
     
 }
 
-/* CSS do valor de B */
+
 #calculator #valueb {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -147,7 +389,7 @@ color: #000000;
     height: 4rem;
 }
 
-/* CSS do valor de C */
+
 #calculator #valuec {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -182,66 +424,25 @@ color: #000000;
 }
 
 
-#information #calculator input {
-    height: 2rem;
-    width: 5rem;
-    margin: 4px;
-    background: #C4C4C4;
-    border-radius: 10px;
-    border: 2px #C4C4C4 solid;
-    
-   
-    
-    text-decoration: none;
-    outline: none;
-    
-
-    transition: border 400ms;
-}
-#information #calculator input:focus {
-    border: 2px #1CCB6C solid;
-}
-
-
 #information #calculator valuea p {
     grid-area: "texta";
 }
 
-#information #button input {
-    width: 90%;
-    height: 5rem;
-    margin: 0.6rem auto;
-    font-size: 2.8rem;
-    font-weight: bold;
-    border: none;
-    outline: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #1CCB6C;
-    border-radius: 20px;
-
-    transition: background 500ms;
-
+#information #numbers #observation p {
+    font-size: 1.5rem;
 }
-
-#information #button input:hover {
-    background-color: #15a757;
 }
 
 
-#results {
 
-    width: 90%;
-    height: 51.5rem;
-    margin-top: 5rem;
-    margin-left: 2rem;
-    background: #DEDDDD;
-    border: 7px solid #1CCB6C;
-    box-sizing: border-box;
-    border-radius: 20px;
-}
+
+
+
+
+
+
+
+
 
 
 

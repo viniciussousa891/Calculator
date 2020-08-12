@@ -23,17 +23,17 @@
             <div id="calculator">
                 <div id="valuea">
                     <p>a</p>
-                    <input id="valuea1" type="number" >
+                    <input id="valuea1" type="number" required>
                     <input id="valuea2" type="number"  value="1">
                 </div>
                 <div id="valueb">
                     <p>b</p>
-                    <input id="valueb1"type="number" >
+                    <input id="valueb1"type="number" required>
                     <input id="valueb2" type="number"  value="1">
                 </div>
                 <div id="valuec">
                     <p>c</p>
-                    <input id="valuec1" type="number" >
+                    <input id="valuec1" type="number" required>
                     <input id="valuec2" type="number" onchange="calculate()" value="1">
                 </div>
 
@@ -48,8 +48,8 @@
     </div>
 
 
-    <div id="results">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consectetur nihil aut maxime voluptates ullam explicabo odio quam itaque labore veniam dolores, adipisci quia necessitatibus ipsam officia, dignissimos sit possimus.</p>
+    <div id="container">
+        <p id="results"></p>
     </div>
 
     <script src="/scripts/script.js"></script>
