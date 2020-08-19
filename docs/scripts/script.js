@@ -30,6 +30,8 @@ function calculate() {
 
     if (resultx1 === resultx2) {
         results.innerText = `Sua equação possue apenas uma raiz real e seu valor é em fração ${resultx1numerator}/${resultx1denominator} e também pode ser apresentado dessa forma: ${resultx1}`
+    } else if (resultx1 != resultx1 && resultx2!=resultx2) {
+        results.innerText = `Valor invalido, Digite novamente. Certifique-se de que todos os valores tenham sido digitados, mesmo eles sendo valor 0.`
     } else {
         results.innerText = `O resultado de x1 é ${resultx1numerator}/${resultx1denominator} ou ${resultx1} e de x2 é ${resultx2numerator}/${resultx2denominator} ou ${resultx2}`
     }
